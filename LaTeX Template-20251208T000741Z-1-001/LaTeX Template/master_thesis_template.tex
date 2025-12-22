@@ -1,0 +1,210 @@
+\RequirePackage{plautopatch}
+\documentclass[uplatex,dvipdfmx,a4paper, 11pt]{jsreport}
+
+
+\usepackage{amsfonts, amsmath, amssymb, amsthm} % 一部の数学記号や数学的表現をするために必要
+\usepackage{bm} % 太字にする
+\usepackage{color} % png画像表示のため
+\usepackage{float} % 図の位置を固定
+\usepackage{graphicx} %グラフを入れるのに必要
+\usepackage{mathtools}
+\mathtoolsset{showonlyrefs=true} % 参照した数式だけに数式番号を付ける
+\usepackage{multirow} % 表で縦複数行にまたがるセルを作るのに必要
+\usepackage{wrapfig} % 文字の回り込み
+\usepackage{physics}
+
+\usepackage[normalem]{ulem} % 下線
+\usepackage[dvipdfmx, bookmarkstype=toc, colorlinks=false, pdfborder={0 0 0}, bookmarks=true, bookmarksnumbered=true]{hyperref} % ハイパーリンク
+\usepackage{pxjahyper} % PDFのしおり機能の日本語文字化けを防ぐ
+
+\usepackage{datetime} % 日付のフォーマットを変更するためのパッケージ
+
+
+\makeatletter
+
+% Japanese
+\def\@thesis{修士論文}
+\def\id#1{\def\@id{#1}}
+\def\department#1{\def\@department{#1}}
+\def\prof#1{\def\@prof{#1}}
+\def\courcejp#1{\def\@courcejp{#1}}
+\newdateformat{japanesedate}{\THEYEAR 年\THEMONTH 月\THEDAY 日}
+\def\datejp#1{\def\@datejp{#1}}
+
+% English
+\def\departmenten#1{\def\@departmenten{#1}}
+\def\profen#1{\def\@profen{#1}}
+\def\titleen#1{\def\@titleen{#1}}
+\def\authoren#1{\def\@authoren{#1}}
+\def\dateen#1{\def\@dateen{#1}}
+\def\courceen#1{\def\@courceen{#1}}
+\newdateformat{englishdate}{\monthname[\THEMONTH] \THEDAY, \THEYEAR}
+
+%要編集
+\title{
+    タイトル
+}
+\titleen{
+    Title
+}
+\department{
+    早稲田大学基幹理工学研究科\\
+    情報理工・情報通信専攻
+}
+\author{
+    名前
+}
+\authoren{
+    Name
+}
+\id{
+    Student id
+}
+\prof{
+    % 教授の名前(日本語)
+    中島　達夫
+}
+\courcejp{ 
+    % 研究指導名（日本語）
+    分散システム研究
+}
+\courceen{ 
+    % 研究指導名（英語）
+    Research on Distributed System
+}
+\profen{
+    % 教授の名前(英語)
+    Professor Tatsuo Nakajima
+}
+
+\datejp{
+    \japanesedate\today
+}
+
+\dateen{
+    % 発行日
+    \englishdate\today
+}
+
+%日本語タイトル(編集不要)
+\newcommand{\maketitlejp}{
+    \newpage
+    \begin{figure}[t]
+        \centering
+        \includegraphics[keepaspectratio, scale=0.6]{kousyou.png}
+    \end{figure}
+    \begin{center}
+        {\huge \@thesis \par}
+        \vspace{20mm}
+        {\huge \@title \par}
+        \vspace{13mm}
+        {\LARGE \@department \par}
+        \vspace{10mm}
+        {\huge \@author \par}
+        \vspace{10mm}
+        {\LARGE \hspace{28mm}学籍番号\hfill\@id\hspace{28mm} \par}
+        {\LARGE \hspace{28mm}提出\hfill\@datejp\hspace{28mm} \par}
+        {\LARGE \hspace{28mm}指導教授\hfill\@prof\hspace{28mm} \par}
+        {\LARGE \hspace{28mm}研究指導名\hfill\@courcejp\hspace{28mm} \par}
+    \end{center}
+    \par\vskip 1.5em
+    \thispagestyle{empty}
+}
+
+%英語タイトル(編集不要)
+\newcommand{\maketitleen}{
+    \newpage
+    \begin{center}
+        \vspace{10mm}
+        {\Huge \bf \@titleen \par}
+        \vspace{20mm}
+        {\LARGE \@authoren \par}
+        \vspace{20mm}
+        {\Large Thesis submitted in partial fulfillment of\\the requirements for the degree of \par}
+        {\LARGE Bachelor in Computer Science \par}
+        \vspace{15mm}
+        {\LARGE \uline{\hspace{8mm}Student ID\hfill\@id\hspace{7mm}} \par}
+        {\LARGE \uline{\hspace{8mm}Submission Date\hfill\@dateen\hspace{7mm}} \par}
+        {\LARGE \uline{\hspace{8mm}Supervisor\hfill\@profen\hspace{7mm}} \par}
+        {\LARGE \uline{\hspace{8mm}Research Guidance\hfill\@courceen\hspace{7mm}} \par}
+        \vspace{10mm}
+    \end{center}
+
+    \begin{wrapfigure}[4]{r}{25mm}
+        \includegraphics[width=2.3cm]{kousyou.png}
+    \end{wrapfigure}
+
+    \large \hfill \par \hfill Department of Computer Science and Engineering\\
+    \hfill School of Fundamental Science and Engineering\\
+    \hfill Waseda University
+    \thispagestyle{empty}
+}
+
+%日本語アブストラクト
+\newcommand{\myabstractjp}[1]{
+    \newpage
+    \phantomsection
+    \addcontentsline{toc}{chapter}{概要}
+    \begin{center}
+        {\LARGE 概要 \par}
+    \end{center}
+    #1
+}
+
+%英語アブストラクト
+\newcommand{\myabstracten}[1]{
+    \newpage
+    \phantomsection
+    \addcontentsline{toc}{chapter}{Abstract}
+    \begin{center}
+        {\LARGE Abstract \par}
+    \end{center}
+    #1
+}
+
+\makeatother
+
+\begin{document}
+\maketitlejp
+\maketitleen
+
+\clearpage\setcounter{page}{0}\pagenumbering{roman}
+
+% アブストラクト
+% \input{Text/abstract-jp.tex}
+% \input{Text/abstract-en.tex}
+
+\tableofcontents %目次
+\listoffigures %図目次
+\listoftables %表目次
+
+\clearpage\setcounter{page}{0}\pagenumbering{arabic}
+
+%%%ここから本文%%%
+
+\clearpage\setcounter{page}{0}\pagenumbering{arabic}
+
+% \chapter{章タイトル}
+% \section{節タイトル}
+% \subsection{本文について}
+% 卒業論文では，句読点に「，．」を使用する．本フォーマットは参考程度に用い，年度ごとの決まりを確認すること．
+
+% 章ごとにファイルを分ける場合
+% \input{Text/introduction.tex}
+% \input{Text/result.tex}
+% \input{Text/discussion.tex}
+% \input{Text/conclusion.tex}
+
+%%%本文ここまで%%%
+
+% 参考文献
+% \bibliography{ref}
+% \bibliographystyle{junsrt}
+
+%謝辞をここに
+
+% \newpage
+% \input{Text/acknowledgements.tex}
+
+\end{document}
+
