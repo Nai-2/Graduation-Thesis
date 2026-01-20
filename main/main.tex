@@ -1,0 +1,179 @@
+\documentclass[a4paper, 11pt]{jsreport}%サイズ変更12->11
+\usepackage{bm}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{ascmac}
+\usepackage{wrapfig}
+\usepackage{here}
+\usepackage{url}
+\usepackage[normalem]{ulem}
+\usepackage[dvipdfmx, bookmarkstype=toc, colorlinks=false, pdfborder={0 0 0}, bookmarks=true, bookmarksnumbered=true]{hyperref}
+\usepackage{pxjahyper}
+\usepackage{caption}%追加部分
+\captionsetup{font={footnotesize,bf}, labelsep=space}%追加部分
+
+\makeatletter
+
+%日本語
+\def\@thesis{卒業論文}
+\def\id#1{\def\@id{#1}}
+\def\department#1{\def\@department{#1}}
+\def\prof#1{\def\@prof{#1}}
+
+%English
+\def\departmenten#1{\def\@departmenten{#1}}
+\def\profen#1{\def\@profen{#1}}
+\def\titleen#1{\def\@titleen{#1}}
+\def\authoren#1{\def\@authoren{#1}}
+\def\dateen#1{\def\@dateen{#1}}
+
+%要編集
+\title{
+    VR空間における音源の空間的配置が\\音程識別学習に与える影響
+}
+
+\titleen{
+    The Effect of Spatial Sound Source Placement on Pitch Interval Identification in VR Environments
+}
+\department{
+    % 所属学科
+    早稲田大学基幹理工学部\\
+    情報理工学科
+}
+\author{
+    % 自分の名前(日本語)
+    内藤　光志
+}
+\authoren{
+    % 自分の名前(英語)
+    Koji Naito
+}
+\id{
+    % 学籍番号
+    1W222257-8
+}
+\prof{
+    % 教授の名前(日本語)
+    中島　達夫
+}
+\profen{
+    % 教授の名前(英語)
+    Professor Tatsuo Nakajima
+}
+\dateen{
+    % 発行日
+    \today
+}
+
+%日本語タイトル(編集不要)
+\newcommand{\maketitlejp}{
+    \begin{figure}[t]
+        \centering
+        \includegraphics[keepaspectratio, scale=0.6]{kousyou.png}
+    \end{figure}
+    \begin{center}
+        {\huge \@thesis \par}
+        \vspace{20mm}
+        {\huge \@title \par}
+        \vspace{13mm}
+        {\LARGE \@department \par}
+        \vspace{10mm}
+        {\huge \@author \par}
+        \vspace{10mm}
+        {\LARGE \hspace{28mm}学籍番号\hfill\@id\hspace{28mm} \par}
+        {\LARGE \hspace{28mm}提出\hfill\@date\hspace{28mm} \par}
+        {\LARGE \hspace{28mm}指導教授\hfill\@prof\hspace{28mm} \par}
+    \end{center}
+    \par\vskip 1.5em
+}
+
+%英語タイトル(編集不要)
+\newcommand{\maketitleen}{
+    \clearpage %追加
+    \begin{center}
+        \vspace{10mm}
+        {\Huge \bf \@titleen \par}
+        \vspace{20mm}
+        {\LARGE \@authoren \par}
+        \vspace{20mm}
+        {\Large Thesis submitted in partial fulfillment of\\the requirements for the degree of \par}
+        {\LARGE Bachelor in Computer Science \par}
+        \vspace{15mm}
+        {\LARGE \uline{\hspace{7mm}Student ID\hfill\@id\hspace{7mm}} \par}
+        {\LARGE \uline{\hspace{7mm}Submission Date\hfill\@dateen\hspace{7mm}} \par}
+        {\LARGE \uline{\hspace{7mm}Supervisor\hfill\@profen\hspace{7mm}} \par}
+        \vspace{10mm}
+    \end{center}
+
+    \begin{wrapfigure}[4]{r}{15mm}
+        \includegraphics[width=2.3cm]{kousyou.png}
+    \end{wrapfigure}
+
+    \large \hfill \par \hfill Department of Computer Science and Engineering\\\hfill School of Fundamental Science and Engineering\\\hfill Waseda University
+}
+
+\makeatother
+\setcounter{tocdepth}{3} %追加
+
+
+
+\begin{document}
+\maketitlejp
+\maketitleen
+
+\newpage
+\addcontentsline{toc}{chapter}{概要}
+\input{Text/0-AbstractJp}
+
+\newpage
+\addcontentsline{toc}{chapter}{Abstract}
+\input{Text/0-AbstractEn}
+
+
+\tableofcontents %目次
+\listoffigures %図目次
+\listoftables %表目次
+
+%%%第1章%%%
+\chapter{序論}
+\input{Text/1-Introduction}
+
+%%%第２章%%%
+\chapter{関連研究}
+\input{Text/2-RelatedWork}
+
+
+%%%第3章%%%
+\chapter{設計}
+\input{Text/3-0-Material}
+
+\chapter{実験}
+\input{Text/3-Method}
+
+%%%第4章%%%
+\chapter{結果}
+\input{Text/4-Result}
+
+%%%第5章%%%
+\chapter{考察}
+\input{Text/5-Disccusion}
+
+%%%第6章%%%
+\chapter{結論}
+\input{Text/6-Conclusion}
+
+
+%\addcontentsline{toc}{chapter}{参考文献}
+\bibliographystyle{junsrt}
+\bibliography{ref} %ref.bibのロード
+
+\newpage
+\chapter*{謝辞}
+\addcontentsline{toc}{chapter}{謝辞}
+\input{Text/9-Acknowledgments}
+%謝辞をここに
+
+\newpage
+\chapter*{付録}
+\addcontentsline{toc}{chapter}{付録}
+
+\end{document}
