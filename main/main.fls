@@ -206,8 +206,6 @@ INPUT extractbb -B cropbox -O figure/system_360.png
 INPUT figure/system_360.png
 INPUT Text/3-Method.tex
 INPUT Text/3-Method.tex
-INPUT Text/4-Result.tex
-INPUT Text/4-Result.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
@@ -217,6 +215,14 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT Text/4-Result.tex
+INPUT Text/4-Result.tex
+INPUT graph/Q1-1.png
+INPUT extractbb -B cropbox -O graph/Q1-1.png
+INPUT graph/Q1-2.png
+INPUT extractbb -B cropbox -O graph/Q1-2.png
+INPUT graph/Q2.png
+INPUT extractbb -B cropbox -O graph/Q2.png
 INPUT Text/5-Disccusion.tex
 INPUT Text/5-Disccusion.tex
 INPUT Text/6-Conclusion.tex

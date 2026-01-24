@@ -1,19 +1,19 @@
 # Fdb version 4
-["bibtex out/main"] 1768922390.48321 "out/main.aux" "out/main.bbl" "out/main" 1768922850.48345 0
-  "./ref.bib" 1768894435 6433 e3ae641a7881d666cdc31157f8b0bffd ""
+["bibtex out/main"] 1769244283.37227 "out/main.aux" "out/main.bbl" "out/main" 1769244409.52006 0
+  "./ref.bib" 1769244270 7199 b283e2ce34eaea469572652366e6e707 ""
   "junsrt.bst" 0 -1 0 ""
-  "out/main.aux" 1768922845 6826 782116c77ddf1b54869ff0b3c068a2c0 "latex"
+  "out/main.aux" 1769244403 10950 4598ff2d5a4f9d4d39aefd69207a2546 "latex"
   (generated)
   "out/main.bbl"
   "out/main.blg"
   (rewritten before read)
-["dvipdf"] 1768922848.16507 "out/main.dvi" "out/main.pdf" "out/main" 1768922850.50457 0
-  "out/main.dvi" 1768922845 61752 1ae10bf248d55a8f6b025d546fe2cbd5 "latex"
+["dvipdf"] 1769244406.20383 "out/main.dvi" "out/main.pdf" "out/main" 1769244409.54029 0
+  "out/main.dvi" 1769244403 98760 fed50ba8a1019154332a8b127a08c8f6 "latex"
   (generated)
   "out/main.pdf"
   (rewritten before read)
-["latex"] 1768922839.94209 "c:/Users/kouna/Desktop/卒論＿Tex/main/main.tex" "out/main.dvi" "main" 1768922850.4845 0
-  "c:/Users/kouna/Desktop/卒論＿Tex/main/main.tex" 1768836796 4297 1ffe6cf7e6b0ba207316f5bdbcecf620 ""
+["latex"] 1769244394.53176 "c:/Users/kouna/Desktop/卒論＿Tex/main/main.tex" "out/main.dvi" "main" 1769244409.52106 0
+  "c:/Users/kouna/Desktop/卒論＿Tex/main/main.tex" 1768924054 4314 c080a0dfd9269a2da441bccefaa61a23 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1768444735 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1768444261 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1768440239 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -107,21 +107,24 @@
   "figure/system_180.png" 1765119730 18032 fa7fe060b8e0d6bc2724f730372dc3e4 ""
   "figure/system_360.png" 1765119730 18032 fa7fe060b8e0d6bc2724f730372dc3e4 ""
   "figure/system_hardware.png" 1765119730 18032 fa7fe060b8e0d6bc2724f730372dc3e4 ""
+  "graph/Q1-1.png" 1769231832 6552 3cb7ad85f5b059f26311d94724e09ab4 ""
+  "graph/Q1-2.png" 1769231796 6697 d3f5debbe8b84db8d3164190c58b415d ""
+  "graph/Q2.png" 1769232751 5506 837cc24f64ab0111d8ae33d411a5e656 ""
   "kousyou.png" 1768439325 3679 893dddc2d7070a0dd232785f79593b71 ""
-  "main.tex" 1768836796 4297 1ffe6cf7e6b0ba207316f5bdbcecf620 ""
-  "out/main.aux" 1768922845 6826 782116c77ddf1b54869ff0b3c068a2c0 "latex"
-  "out/main.bbl" 1768922391 2674 744714ff867239264dbf65bee872f08d "bibtex out/main"
-  "out/main.lof" 1768922845 610 d5bed6bc802a5d4a07d5177902c903af "latex"
-  "out/main.lot" 1768922845 267 6819e876ab1d38d15e93751a3979ac0f "latex"
-  "out/main.out" 1768922845 3602 b200037fdcd3f46a0353a51c729ec3e5 "latex"
-  "out/main.toc" 1768922845 2329 c42e315ddce1c7c83ed732c4c669debf "latex"
+  "main.tex" 1768924054 4314 c080a0dfd9269a2da441bccefaa61a23 ""
+  "out/main.aux" 1769244403 10950 4598ff2d5a4f9d4d39aefd69207a2546 "latex"
+  "out/main.bbl" 1769244284 3227 d2d204c19a643155f0c6c55c23b00d81 "bibtex out/main"
+  "out/main.lof" 1769244403 965 949574082334ff62623e49710baa11eb "latex"
+  "out/main.lot" 1769244403 1521 14ae5a44310d2e76f1cd6bf0dbcd6262 "latex"
+  "out/main.out" 1769244403 4215 6f2f12677f245c9bff851fb48447df31 "latex"
+  "out/main.toc" 1769244403 2687 e55ba9b64165e288a5b902234437dc90 "latex"
   "text/0-AbstractEn.tex" 1768636791 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "text/0-AbstractJp.tex" 1768880168 1784 8f7147618221c7f2f1780fda8783f089 ""
-  "text/1-Introduction.tex" 1768899209 5752 56e501128c907eec08b10a544fb2c20b ""
-  "text/2-Relatedwork.tex" 1768900088 4609 1fadb19cd68533f52100475ce82b05c2 ""
-  "text/3-0-Material.tex" 1768922833 5572 4b5d46b32f3fd44e7c2135c45df9e8dc ""
-  "text/3-Method.tex" 1768812539 3101 c9e3b064bc3cd9cd1f1048743234fa5e ""
-  "text/4-Result.tex" 1768810471 229 ba9228ece04a00c28a87d98a8150d887 ""
+  "text/0-AbstractJp.tex" 1769055294 2029 6a6f2c2b007dad8e4188798a8f0bf1c5 ""
+  "text/1-Introduction.tex" 1769054500 5772 50147cc340d70c339c316b4561d86eba ""
+  "text/2-Relatedwork.tex" 1769237597 4335 83b32df50b1e10cfe759b50e1834dc4e ""
+  "text/3-0-Material.tex" 1769244191 5630 72d24df7aaf69b712fc83c2d7ccae79f ""
+  "text/3-Method.tex" 1769243986 6190 9ae5643355ebf73ef2a714ce10e7c305 ""
+  "text/4-Result.tex" 1769244386 15834 be87307bfd5862d6694226399fc5b768 ""
   "text/5-Disccusion.tex" 1768637262 0 d41d8cd98f00b204e9800998ecf8427e ""
   "text/6-Conclusion.tex" 1768837214 42 ecb95c6606ca47904c568010276c1e85 ""
   "text/9-Acknowledgments.tex" 1768635200 0 d41d8cd98f00b204e9800998ecf8427e ""

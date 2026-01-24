@@ -12,6 +12,12 @@ Stefania Serafin, Ali Adjorlu, Niels Nilsson, Lui Thomsen, and Rolf Nordahl.
 \newblock In {\em 2017 IEEE virtual reality workshop on K-12 embodied learning
   through virtual \& augmented reality (KELVAR)}, pp. 1--4. IEEE, 2017.
 
+\bibitem{gao2024application}
+Hongjiao Gao and Fan Li.
+\newblock The application of virtual reality technology in the teaching of
+  clarinet music art under the mobile wireless network learning environment.
+\newblock {\em Entertainment Computing}, Vol.~49, p. 100619, 2024.
+
 \bibitem{liu2025research}
 Lin Liu.
 \newblock Research on the “vr+” music education model and its practice in the
@@ -63,5 +69,11 @@ Carolyn~M McClaskey.
 \newblock Standard-interval size affects interval-discrimination thresholds for
   pure-tone melodic pitch intervals.
 \newblock {\em Hearing research}, Vol. 355, pp. 64--69, 2017.
+
+\bibitem{芳賀繁1996日本語版}
+芳賀繁, 水上直樹.
+\newblock 日本語版 nasa-tlx によるメンタルワークロード測定
+  各種室内実験課題の困難度に対するワークロード得点の感度.
+\newblock 人間工学, Vol.~32, No.~2, pp. 71--79, 1996.
 
 \end{thebibliography}
