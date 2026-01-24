@@ -246,11 +246,6 @@ INPUT ./text/3-Method.tex
 INPUT ./text/3-Method.tex
 INPUT ./text/3-Method.tex
 INPUT text/3-Method.tex
-INPUT ./text/4-Result.tex
-INPUT ./text/4-Result.tex
-INPUT ./text/4-Result.tex
-INPUT ./text/4-Result.tex
-INPUT text/4-Result.tex
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-h.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
@@ -260,6 +255,23 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
+INPUT ./text/4-Result.tex
+INPUT ./text/4-Result.tex
+INPUT ./text/4-Result.tex
+INPUT ./text/4-Result.tex
+INPUT text/4-Result.tex
+INPUT ./graph/Q1-1.png
+INPUT ./graph/Q1-1.png
+INPUT ./graph/Q1-1.png
+INPUT extractbb -B cropbox -O graph/Q1-1.png
+INPUT ./graph/Q1-2.png
+INPUT ./graph/Q1-2.png
+INPUT ./graph/Q1-2.png
+INPUT extractbb -B cropbox -O graph/Q1-2.png
+INPUT ./graph/Q2.png
+INPUT ./graph/Q2.png
+INPUT ./graph/Q2.png
+INPUT extractbb -B cropbox -O graph/Q2.png
 INPUT ./text/5-Disccusion.tex
 INPUT ./text/5-Disccusion.tex
 INPUT ./text/5-Disccusion.tex
